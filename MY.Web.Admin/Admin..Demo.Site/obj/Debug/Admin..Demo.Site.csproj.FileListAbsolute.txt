@@ -1,0 +1,17 @@
+C:\Users\凡雨\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin._.Demo.Site.dll
+C:\Users\凡雨\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin._.Demo.Site.pdb
+C:\Users\凡雨\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin._.Demo.Site.dll
+C:\Users\凡雨\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin._.Demo.Site.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin._.Demo.Site.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin._.Demo.Site.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin._.Demo.Site.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin._.Demo.Site.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin..Demo.Site.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Compoent.Tool.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Core.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Site.Models.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Core.Models.dll
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Compoent.Tool.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Core.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Site.Models.pdb
+C:\Users\Administrator\Desktop\Web\MY.Web.Admin\Admin..Demo.Site\bin\Debug\Admin.Demo.Core.Models.pdb

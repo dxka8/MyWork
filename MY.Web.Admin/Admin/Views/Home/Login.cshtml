@@ -1,0 +1,15 @@
+﻿@model Admin.Demo.Site.Models.LoginModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3>@Model.ReturnUrl</h3>
+
+<form action="/Home/Login" method="post">
+    @Html.TextBoxFor(m=>m.Account)
+    @Html.TextBoxFor(m => m.Password)
+    @Html.TextBoxFor(m => m.ReturnUrl)
+    <input type="submit" name="name" value=" " />
+</form>
+

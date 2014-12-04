@@ -1,0 +1,17 @@
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.ISite.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.ISite.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Compoent.Tool.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Core.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Site.Models.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Core.Models.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Compoent.Tool.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Core.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Site.Models.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\bin\Debug\Admin.Demo.Core.Models.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb

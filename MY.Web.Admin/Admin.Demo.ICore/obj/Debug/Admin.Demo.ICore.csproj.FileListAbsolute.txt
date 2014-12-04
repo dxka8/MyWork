@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Demo.ICore.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Demo.ICore.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Compoent.Tool.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Demo.Core.Models.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Compoent.Tool.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Admin.Demo.Core.Models.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\obj\Debug\Admin.Demo.ICore.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\obj\Debug\Admin.Demo.ICore.pdb
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ICore\obj\Debug\Admin.Demo.ICore.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ICore.dll
+C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ICore.pdb
