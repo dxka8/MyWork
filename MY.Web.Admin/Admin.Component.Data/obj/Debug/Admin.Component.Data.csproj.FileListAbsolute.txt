@@ -86,3 +86,9 @@ C:\Users\凡雨\Desktop\github\MyWebProject\MY.Web.Admin\Admin.Component.Data\bi
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Component.Data.dll.config
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Component.Data.dll
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Component.Data.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.dll.config
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Component.Data\obj\Debug\Admin.Component.Data.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Component.Data\obj\Debug\Admin.Component.Data.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Component.Data\obj\Debug\Admin.Component.Data.pdb

@@ -10,8 +10,7 @@ namespace Admin.Component.Data.EntityFramework
     ///     单元操作实现
     /// </summary>
     public abstract class EfUnitOfWorkContextBase : IEfiUnitOfWorkContext
-    {
-      
+    {    
         /// <summary>
         /// 获取 当前使用的数据访问上下文对象
         /// </summary>

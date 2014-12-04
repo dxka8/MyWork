@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Admin.Compoent.Tool;
+using Admin.Compoent.Tool.Unity;
 using Admin.Component.Data.EntityFramework;
 
 
@@ -13,11 +14,16 @@ namespace Admin.Component.Data
     
     public abstract class EfRepositoryBase<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : EntityBase<TKey>
     {
-        /// <summary>
+        protected EfRepositoryBase ()
+        {
+            if (UnitOfWork != null) return;
+            new UnityHelper().ReflexRegisterInstance<IUnitOfWork>("IUnitOfWork");
+            UnitOfWork = new UnityHelper().GetObject<IUnitOfWork>();
+        }  
+            /// <summary>
         /// 获取 仓储上下文的实例
-        /// </summary>
-        [Import]
-        public IUnitOfWork UnitOfWork { get; set; }
+        /// </summary>      
+        public static IUnitOfWork UnitOfWork { get; set; }
 
         /// <summary>
         /// 获取或设置 EntityFramework的数据仓储上下文

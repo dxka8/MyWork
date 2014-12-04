@@ -74,3 +74,9 @@ C:\Users\凡雨\Desktop\github\MyWebProject\MY.Web.Admin\Admin.Demo.Core.Data\bi
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.dll.config
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.dll
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.dll.config
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.pdb
