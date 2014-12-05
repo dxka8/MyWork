@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.Composition;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using Admin.Component.Data.Date;
+using Admin.Demo.Core.Models.Account;
+
 
 namespace Admin.Demo.Core.Data.Context
 {
     
         /// <summary>
         ///     Demo项目数据访问上下文
-        /// </summary>
-       
+        /// </summary>      
         public class DemoDbContext : DbContext
         {
             #region 构造函数
@@ -30,12 +30,9 @@ namespace Admin.Demo.Core.Data.Context
 
             #region 属性
 
-            public DbSet<Role> Roles { get; set; }
-
             public DbSet<Member> Members { get; set; }
 
-            public DbSet<MemberExtend> MemberExtends { get; set; }
-
+ 
             public DbSet<LoginLog> LoginLogs { get; set; }
 
             #endregion

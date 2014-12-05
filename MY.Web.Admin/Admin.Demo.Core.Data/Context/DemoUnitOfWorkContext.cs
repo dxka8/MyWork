@@ -2,6 +2,7 @@
 using System.ComponentModel.Composition;
 using System.Data.Entity;
 using System.Reflection;
+using Admin.Compoent.Tool.Unity;
 using Admin.Component.Data;
 using Admin.Component.Data.EntityFramework;
 
@@ -9,15 +10,21 @@ namespace Admin.Demo.Core.Data.Context
 {
     /// <summary>
     ///     Demo项目单元操作类
-    /// </summary>
-    
+    /// </summary>   
     public class EfDemoUnitOfWorkContext : EfUnitOfWorkContextBase
     {
+        public EfDemoUnitOfWorkContext()
+        {
+            if (DbContext == null) return;
+            var unity = new UnityHelper();
+            unity.ReflexRegisterInstance<DbContext>("DbContext");
+            DbContext = unity.GetObject<DbContext>();
+        }
+
         /// <summary>
         ///     获取或设置 默认的Demo项目数据访问上下文对象
-        /// </summary>
-        [Import(typeof(DbContext))]
-        public  DemoDbContext DemoDbContext { get; set; }
+        /// </summary>      
+        public DbContext DbContext { get; set; }
 
 
 
@@ -26,7 +33,7 @@ namespace Admin.Demo.Core.Data.Context
         /// </summary>
         protected override DbContext Context
         {
-            get { return DemoDbContext; }
+            get { return DbContext; }
         }
     }
 }

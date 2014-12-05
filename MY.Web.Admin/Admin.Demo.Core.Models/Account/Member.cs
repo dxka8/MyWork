@@ -1,47 +1,50 @@
-ï»¿using System.ComponentModel;
+
+
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Admin.Compoent.Tool;
 
 namespace Admin.Demo.Core.Models.Account
 {
-    
-        /// <summary>
-        ///     å®ä½“ç±»â€”â€”ç”¨æˆ·ä¿¡æ¯
-        /// </summary>
-        [Description("ç”¨æˆ·ä¿¡æ¯")]
-        public class Member : EntityBase<int>
+    /// <summary>
+    ///     ÊµÌåÀà¡ª¡ªÓÃ»§ĞÅÏ¢
+    /// </summary>
+    [Description("ÓÃ»§ĞÅÏ¢")]
+    public class Member : EntityBase<int>
+    {
+        public Member()
         {
            
-
-            /// <summary>
-            /// è·å–æˆ–è®¾ç½® ç”¨æˆ·å
-            /// </summary>
-            [Required]
-            [StringLength(20)]
-            public string UserName { get; set; }
-
-            /// <summary>
-            /// è·å–æˆ–è®¾ç½® å¯†ç 
-            /// </summary>
-            [Required]
-            [StringLength(32)]
-            public string Password { get; set; }
-
-            /// <summary>
-            /// è·å–æˆ–è®¾ç½® ç”¨æˆ·æ˜µç§°
-            /// </summary>
-            [Required]
-            [StringLength(20)]
-            public string NickName { get; set; }
-
-            /// <summary>
-            /// è·å–æˆ–è®¾ç½® ç”¨æˆ·é‚®ç®±
-            /// </summary>
-            [Required]
-            [StringLength(50)]
-            public string Email { get; set; }
-
-           
+            LoginLogs = new List<LoginLog>();
         }
-    
+
+        [Required]
+        [StringLength(20)]
+        public string UserName { get; set; }
+
+        [Required]
+        [StringLength(32)]
+        public string Password { get; set; }
+
+        [Required]
+        [StringLength(20)]
+        public string NickName { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Email { get; set; }
+
+        /// <summary>
+        /// »ñÈ¡»òÉèÖÃ ÓÃ»§À©Õ¹ĞÅÏ¢
+        /// </summary>
+        
+        public virtual MemberExtend Extend { get; set; }
+
+
+        /// <summary>
+        /// »ñÈ¡»òÉèÖÃ ÓÃ»§µÇÂ¼¼ÇÂ¼¼¯ºÏ
+        /// </summary>
+        public virtual ICollection<LoginLog> LoginLogs { get; set; }
+    }
 }

@@ -13,7 +13,11 @@ namespace Admin.Compoent.Tool.Unity
     {
         public UnityHelper()
         {
-            _container = new UnityContainer();
+            if (_container == null)
+            {
+                _container = new UnityContainer();
+            }
+            
         }
 
         public void aaa()
@@ -52,7 +56,8 @@ namespace Admin.Compoent.Tool.Unity
         {
             var str = ConfigurationManager.AppSettings[interfaceName].Split('#');           
             Assembly assembly = Assembly.LoadFile(PathHelper.PathHelper.MapPath("/bin/" + str[0]));
-            var it= Activator.CreateInstance(assembly.GetType(str[1])) as IT;
+            //var bb = Activator.CreateInstance(assembly.GetType("Admin.Demo.Site.Impl.AccountSiteService"));            
+            var it = Activator.CreateInstance(assembly.GetType(str[1])) as IT;
             _container.RegisterInstance(it);
         }
         /// <summary>

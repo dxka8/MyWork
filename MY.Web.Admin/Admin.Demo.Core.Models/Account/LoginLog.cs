@@ -1,22 +1,18 @@
-ï»¿using System;
-using System.Collections.Generic;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Admin.Compoent.Tool;
 
 namespace Admin.Demo.Core.Models.Account
 {
     /// <summary>
-    /// å®ä½“ç±»â€”â€”ç™»å½•è®°å½•ä¿¡æ¯
+    /// ÊµÌåÀà¡ª¡ªµÇÂ¼¼ÇÂ¼ĞÅÏ¢
     /// </summary>
-    [Description("ç™»å½•è®°å½•ä¿¡æ¯")]
+    [Description("µÇÂ¼¼ÇÂ¼ĞÅÏ¢")]
     public class LoginLog : EntityBase<Guid>
     {
         /// <summary>
-        /// åˆå§‹åŒ–ä¸€ä¸ª ç™»å½•è®°å½•å®ä½“ç±» çš„æ–°å®ä¾‹
+        /// ³õÊ¼»¯Ò»¸ö µÇÂ¼¼ÇÂ¼ÊµÌåÀà µÄĞÂÊµÀı
         /// </summary>
         public LoginLog()
         {
@@ -28,7 +24,7 @@ namespace Admin.Demo.Core.Models.Account
         public string IpAddress { get; set; }
 
         /// <summary>
-        /// è·å–æˆ–è®¾ç½® æ‰€å±ç”¨æˆ·ä¿¡æ¯
+        /// »ñÈ¡»òÉèÖÃ ËùÊôÓÃ»§ĞÅÏ¢
         /// </summary>
         public virtual Member Member { get; set; }
     }

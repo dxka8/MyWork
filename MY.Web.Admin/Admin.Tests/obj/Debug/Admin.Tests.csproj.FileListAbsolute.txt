@@ -330,3 +330,9 @@ C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Tests\bi
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Tests.dll.config
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Tests.dll
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Tests.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Tests.dll.config
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Tests.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Tests.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Tests\obj\Debug\Admin.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Tests\obj\Debug\Admin.Tests.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Tests\obj\Debug\Admin.Tests.pdb

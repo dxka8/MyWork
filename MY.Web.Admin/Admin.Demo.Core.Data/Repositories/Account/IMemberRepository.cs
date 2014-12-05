@@ -10,7 +10,7 @@ namespace Admin.Demo.Core.Data.Repositories.Account
     /// <summary>
     ///   仓储操作层接口——用户信息
     /// </summary>
-    public partial interface IMemberRepository : IRepository<Member, int>
+    public interface IMemberRepository : IRepository<Member, Int32>
     {
 
     }

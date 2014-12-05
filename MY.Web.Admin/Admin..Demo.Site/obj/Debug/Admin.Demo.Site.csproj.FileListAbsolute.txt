@@ -80,3 +80,9 @@ C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin..Demo.Si
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin._.Demo.Site.dll.config
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin._.Demo.Site.dll
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin._.Demo.Site.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.dll.config
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.csprojResolveAssemblyReference.cache

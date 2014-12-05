@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,8 +18,9 @@ namespace Admin.Demo.Core.Impl
             new Member(){UserName = "agent",Email = "258065584@qq.com",NickName = "Zking",Password = "123456"}
         };
         private static readonly List<LoginLog> LoginLogs = new List<LoginLog>();
-        public Compoent.Tool.OperationResult Login(LoginInfo loginInfo)
+        public OperationResult Login(LoginInfo loginInfo)
         {
+           
             if (loginInfo != null)
             {
                 var member =

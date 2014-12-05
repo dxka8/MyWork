@@ -68,6 +68,11 @@ namespace Admin.Demo.Site.Impl
             AccountService = UnityHelper.GetObject<IAccountContract>();
         }
 
+        /// <summary>
+        /// 用户登陆方法
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public OperationResult Login(LoginModel model)
         {
 

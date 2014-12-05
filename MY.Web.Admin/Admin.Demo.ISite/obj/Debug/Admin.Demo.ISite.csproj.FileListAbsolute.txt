@@ -15,3 +15,8 @@ C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISi
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.pdb
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.dll
 C:\Users\Administrator\Documents\GitHub\MyWebProject\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.pdb
