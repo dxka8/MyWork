@@ -3,20 +3,32 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition.Hosting;
 using System.Data.Entity;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Admin.Compoent.Tool.Unity;
+using Admin.Component.Data;
+using Admin.Demo.Core.Data.Context;
 using Admin.Demo.Core.Data.Initialize;
+using Admin.Demo.Core.Data.Repositories.Account;
+using Admin.Demo.Core.Data.Repositories.Account.Impl;
+using Admin.Demo.Core.Impl;
+using Admin.Demo.Core.Models.Account;
+using Admin.Demo.ICore;
 using Admin.Demo.ISite;
 using Admin.Demo.Core;
+using Admin.Demo.Site.Impl;
+using Autofac;
+using Autofac.Integration.Mvc;
 
 
 namespace Admin
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        public static IContainer container;
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -25,13 +37,27 @@ namespace Admin
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             
             DatabaseInitializer.Initialize();
-            //设置MEF依赖注入容器
-            //DirectoryCatalog catalog=new DirectoryCatalog(AppDomain.CurrentDomain.SetupInformation.PrivateBinPath);
-            //MefDependencySolver solver=new MefDependencySolver(catalog);
-            //DependencyResolver.SetResolver(solver);
+           
             
             //设置unity依赖注入容器
-           
+            var builder = new ContainerBuilder();
+            builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterType<AccountSiteService>().As<IAccountSiteContract>();
+
+            builder.RegisterType<AccountSiteService>().PropertiesAutowired();
+            builder.RegisterType<AccountService>().As<IAccountContract>();
+
+            builder.RegisterType<MemberRepositories>().PropertiesAutowired();
+            builder.RegisterType<EfDemoUnitOfWorkContext>().As<IUnitOfWork>();
+
+            builder.RegisterType<EfDemoUnitOfWorkContext>().PropertiesAutowired();
+            builder.RegisterType<DemoDbContext>().As<DbContext>();
+
+            builder.RegisterType<AccountService>().PropertiesAutowired();
+            builder.RegisterType<MemberRepositories>().As<IMemberRepository>();
+            container = builder.Build();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
         }
     }
 }

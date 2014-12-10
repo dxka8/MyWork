@@ -14,11 +14,9 @@ namespace Admin.Controllers
     {
 
         private static IAccountSiteContract AccountContract { get; set; }
-        public HomeController()
+        public HomeController(IAccountSiteContract accountSiteContract)
         {
-            if(AccountContract!=null)return;
-            new UnityHelper().ReflexRegisterInstance<IAccountSiteContract>("IAccountSiteContract");
-            AccountContract = new UnityHelper().GetObject<IAccountSiteContract>();
+            AccountContract = accountSiteContract;
         }      
         #region 属性
 
@@ -38,8 +36,8 @@ namespace Admin.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel model)
         {
-            try
-            {
+            //try
+            //{
                 OperationResult result = AccountContract.Login(model);
                 
                 var msg = result.Message ?? result.ResultType.ToDescription();
@@ -49,12 +47,12 @@ namespace Admin.Controllers
                 }
                 ModelState.AddModelError("", msg);
                 return View(model);
-            }
-            catch (Exception e)
-            {
-                ModelState.AddModelError("", e.Message);
-                return View(model);
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    ModelState.AddModelError("", e.Message);
+            //    return View(model);
+            //}
         }
        
     }

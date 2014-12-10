@@ -61,11 +61,9 @@ namespace Admin.Demo.Site.Impl
 
         //ioc
         public static IAccountContract AccountService { get; set; }
-        public AccountSiteService()
+        public AccountSiteService(IAccountContract accountContract)
         {
-            if (AccountService != null) return;
-            UnityHelper.ReflexRegisterInstance<IAccountContract>("IAccountContract");
-            AccountService = UnityHelper.GetObject<IAccountContract>();
+            AccountService = accountContract;
         }
 
         /// <summary>

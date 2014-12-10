@@ -509,8 +509,13 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Compoe
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.Models.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.dll
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Autofac.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Autofac.Integration.Mvc.dll
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Autofac.xml
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Autofac.Integration.Mvc.xml
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ICore.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.pdb
