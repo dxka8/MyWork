@@ -13,11 +13,7 @@ namespace Admin.Demo.Core.Impl
 {
     public  class AccountService:IAccountContract
     {
-        //private static readonly  Member[] Members=new Member[]
-        //{
-        //    new Member(){UserName = "Admin",Email = "258065584@qq.com",NickName = "BBking",Password = "123456"},
-        //    new Member(){UserName = "agent",Email = "258065584@qq.com",NickName = "Zking",Password = "123456"}
-        //};
+       
         public IMemberRepository MemberRepository { get; set; }
 
         public AccountService(IMemberRepository memberRepository)
