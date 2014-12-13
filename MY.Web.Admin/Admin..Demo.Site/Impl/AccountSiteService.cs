@@ -11,6 +11,7 @@ using Admin.Compoent.Tool;
 using Admin.Compoent.Tool.Eum;
 using Admin.Compoent.Tool.Unity;
 using Admin.Demo.Core.Models.Account;
+using Admin.Demo.Core.Models.Account.BusMode;
 using Admin.Demo.ICore;
 using Admin.Demo.ISite;
 using Admin.Demo.Site.Models;

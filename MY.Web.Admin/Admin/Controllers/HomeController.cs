@@ -1,8 +1,6 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Admin.Compoent.Tool;
 using Admin.Compoent.Tool.Extend;
-using Admin.Compoent.Tool.Unity;
 using Admin.Demo.ISite;
 using Admin.Demo.Site.Models;
 

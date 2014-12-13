@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Admin.Compoent.Tool;
 using Admin.Demo.Core.Data.Repositories.Account;
 using Admin.Demo.Core.Models.Account;
+using Admin.Demo.Core.Models.Account.BusMode;
 using Admin.Demo.ICore;
 
 namespace Admin.Demo.Core.Impl

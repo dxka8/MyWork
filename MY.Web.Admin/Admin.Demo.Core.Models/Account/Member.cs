@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Admin.Compoent.Tool;
+using Admin.Demo.Core.Models.Security;
 
 namespace Admin.Demo.Core.Models.Account
 {
@@ -13,11 +14,11 @@ namespace Admin.Demo.Core.Models.Account
     [Description("用户信息")]
     public class Member : EntityBase<int>
     {
-        public Member()
-        {
+        //public Member()
+        //{
            
-            LoginLogs = new List<LoginLog>();
-        }
+        //    LoginLogs = new List<LoginLog>();
+        //}
 
         [Required]
         [StringLength(20)]
@@ -46,5 +47,11 @@ namespace Admin.Demo.Core.Models.Account
         /// 获取或设置 用户登录记录集合
         /// </summary>
         public virtual ICollection<LoginLog> LoginLogs { get; set; }
+
+        /// <summary>
+        /// 获取或设置 用户拥有的角色信息集合
+        /// </summary>
+        public virtual ICollection<Role> Roles { get; set; }
+
     }
 }

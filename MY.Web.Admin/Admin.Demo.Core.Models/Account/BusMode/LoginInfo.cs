@@ -1,6 +1,6 @@
 
 
-namespace Admin.Demo.Core.Models.Account
+namespace Admin.Demo.Core.Models.Account.BusMode
 {
     /// <summary>
     ///     登录信息类
@@ -8,7 +8,7 @@ namespace Admin.Demo.Core.Models.Account
     public class LoginInfo
     {
         /// <summary>
-        ///     获取或设置 登录账号
+        ///     获取或设置 登录账号B
         /// </summary>
         public string Account { get; set; }
 

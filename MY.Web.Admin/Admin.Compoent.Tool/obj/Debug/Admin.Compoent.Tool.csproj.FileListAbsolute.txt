@@ -45,3 +45,4 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Compoe
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Compoent.Tool.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Compoent.Tool\obj\Debug\Admin.Compoent.Tool.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Compoent.Tool\obj\Debug\Admin.Compoent.Tool.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Compoent.Tool\obj\Debug\Admin.Compoent.Tool.csprojResolveAssemblyReference.cache

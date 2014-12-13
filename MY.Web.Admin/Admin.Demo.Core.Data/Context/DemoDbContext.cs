@@ -32,6 +32,7 @@ namespace Admin.Demo.Core.Data.Context
 
             public DbSet<Member> Members { get; set; }
 
+         
  
             public DbSet<LoginLog> LoginLogs { get; set; }
 
