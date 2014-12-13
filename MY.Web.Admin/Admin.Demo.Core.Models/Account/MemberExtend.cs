@@ -33,5 +33,7 @@ namespace Admin.Demo.Core.Models.Account
         public string Tel { get; set; }
 
         public MemberAddress Address { get; set; }
+
+        public virtual Member Member { get; set; }
     }
 }

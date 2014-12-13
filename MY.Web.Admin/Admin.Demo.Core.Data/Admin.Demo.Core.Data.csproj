@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configrations\Account\MemberAddressConfiguration.cs" />
     <Compile Include="Context\DemoDbContext.cs" />
     <Compile Include="Context\DemoUnitOfWorkContext.cs" />
     <Compile Include="Initialize\DatabaseInitializer.cs" />
