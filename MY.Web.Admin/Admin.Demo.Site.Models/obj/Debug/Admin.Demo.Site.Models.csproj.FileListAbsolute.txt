@@ -25,3 +25,4 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.S
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.Models.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Site.Models\obj\Debug\Admin.Demo.Site.Models.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Site.Models\obj\Debug\Admin.Demo.Site.Models.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Site.Models\obj\Debug\Admin.Demo.Site.Models.csprojResolveAssemblyReference.cache

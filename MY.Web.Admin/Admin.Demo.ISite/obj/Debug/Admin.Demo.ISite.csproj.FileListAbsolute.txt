@@ -20,3 +20,8 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.I
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.pdb
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.csprojResolveAssemblyReference.cache
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.ISite\obj\Debug\Admin.Demo.ISite.pdb

@@ -11,6 +11,7 @@ using Admin.Compoent.Tool;
 using Admin.Compoent.Tool.Eum;
 using Admin.Compoent.Tool.Unity;
 using Admin.Demo.Core.Models.Account;
+using Admin.Demo.Core.Models.Account.BusMode;
 using Admin.Demo.ICore;
 using Admin.Demo.ISite;
 using Admin.Demo.Site.Models;
@@ -61,11 +62,9 @@ namespace Admin.Demo.Site.Impl
 
         //ioc
         public static IAccountContract AccountService { get; set; }
-        public AccountSiteService()
+        public AccountSiteService(IAccountContract accountContract)
         {
-            if (AccountService != null) return;
-            UnityHelper.ReflexRegisterInstance<IAccountContract>("IAccountContract");
-            AccountService = UnityHelper.GetObject<IAccountContract>();
+            AccountService = accountContract;
         }
 
         /// <summary>

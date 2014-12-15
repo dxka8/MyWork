@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Admin.Compoent.Tool;
@@ -27,5 +29,7 @@ namespace Admin.Demo.Core.Models.Account
         /// 获取或设置 所属用户信息
         /// </summary>
         public virtual Member Member { get; set; }
+
+        //public virtual ICollection<Member> Member { get; set; }
     }
 }

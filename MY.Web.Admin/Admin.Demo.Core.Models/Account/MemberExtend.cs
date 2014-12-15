@@ -12,6 +12,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using Admin.Compoent.Tool;
 
 namespace Admin.Demo.Core.Models.Account
@@ -20,18 +21,21 @@ namespace Admin.Demo.Core.Models.Account
     ///     实体类——用户扩展信息
     /// </summary>
     [Description("用户扩展信息")]
-    public class MemberExtend : EntityBase<Guid>
+    public class MemberExtend : EntityBase<int>
     {
         /// <summary>
         /// 初始化一个 用户扩展实体类 的新实例
         /// </summary>
-        public MemberExtend()
-        {
-            Id = CombHelper.NewComb();
-        }
+        //public MemberExtend()
+        //{
+        //    Id = CombHelper.NewComb();
+        //}
 
         public string Tel { get; set; }
 
         public MemberAddress Address { get; set; }
+
+        
+        public virtual Member Member { get; set; }
     }
 }

@@ -5,26 +5,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Admin.Compoent.Tool;
+using Admin.Demo.Core.Data.Repositories.Account;
 using Admin.Demo.Core.Models.Account;
+using Admin.Demo.Core.Models.Account.BusMode;
 using Admin.Demo.ICore;
 
 namespace Admin.Demo.Core.Impl
 {
     public  class AccountService:IAccountContract
     {
-        private static readonly  Member[] Members=new Member[]
+       
+        public IMemberRepository MemberRepository { get; set; }
+
+        public AccountService(IMemberRepository memberRepository)
         {
-            new Member(){UserName = "Admin",Email = "258065584@qq.com",NickName = "BBking",Password = "123456"},
-            new Member(){UserName = "agent",Email = "258065584@qq.com",NickName = "Zking",Password = "123456"}
-        };
+            MemberRepository=memberRepository;
+        }
         private static readonly List<LoginLog> LoginLogs = new List<LoginLog>();
         public OperationResult Login(LoginInfo loginInfo)
         {
            
             if (loginInfo != null)
-            {
-                var member =
-                    Members.SingleOrDefault(m => m.UserName == loginInfo.Account || m.Email == loginInfo.Account);
+            {              
+               var member= MemberRepository.Entities.SingleOrDefault(
+                    m => m.UserName == loginInfo.Account || m.Email == loginInfo.Account);
                 if (member == null)
                 {
                     return new OperationResult(OperationResultType.QueryNull, "指定账号的用户不存在。");

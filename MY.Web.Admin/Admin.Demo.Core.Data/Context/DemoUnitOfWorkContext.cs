@@ -13,12 +13,15 @@ namespace Admin.Demo.Core.Data.Context
     /// </summary>   
     public class EfDemoUnitOfWorkContext : EfUnitOfWorkContextBase
     {
+        public EfDemoUnitOfWorkContext(DbContext dbContext)
+        {
+
+            DbContext = dbContext;
+        }
         public EfDemoUnitOfWorkContext()
         {
-            if (DbContext == null) return;
-            var unity = new UnityHelper();
-            unity.ReflexRegisterInstance<DbContext>("DbContext");
-            DbContext = unity.GetObject<DbContext>();
+
+            
         }
 
         /// <summary>

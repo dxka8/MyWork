@@ -86,3 +86,9 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.S
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.csprojResolveAssemblyReference.cache
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.dll.config
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.pdb
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.csprojResolveAssemblyReference.cache
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin..Demo.Site\obj\Debug\Admin.Demo.Site.pdb

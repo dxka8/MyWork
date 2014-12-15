@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Admin.Compoent.Tool;
 using Admin.Compoent.Tool.Unity;
 using Admin.Component.Data.EntityFramework;
+using Admin.Demo.Core.Data.Context;
 
 
 namespace Admin.Component.Data
@@ -14,16 +15,12 @@ namespace Admin.Component.Data
     
     public abstract class EfRepositoryBase<TEntity, TKey> : IRepository<TEntity, TKey> where TEntity : EntityBase<TKey>
     {
-        protected EfRepositoryBase ()
-        {
-            if (UnitOfWork != null) return;
-            new UnityHelper().ReflexRegisterInstance<IUnitOfWork>("IUnitOfWork");
-            UnitOfWork = new UnityHelper().GetObject<IUnitOfWork>();
-        }  
+        
+        
             /// <summary>
         /// 获取 仓储上下文的实例
         /// </summary>      
-        public static IUnitOfWork UnitOfWork { get; set; }
+        public  IUnitOfWork UnitOfWork { get; set; }
 
         /// <summary>
         /// 获取或设置 EntityFramework的数据仓储上下文
@@ -32,9 +29,9 @@ namespace Admin.Component.Data
         {
             get
             {
-                if (UnitOfWork is IEfiUnitOfWorkContext)
+                if (UnitOfWork is EfUnitOfWorkContextBase)
                 {
-                    return UnitOfWork as IEfiUnitOfWorkContext;
+                    return UnitOfWork as EfUnitOfWorkContextBase;
                 }
                 throw new DataAccessException(string.Format("数据仓储上下文对象类型不正确，应为IUnitOfWorkContext，实际为 {0}", UnitOfWork.GetType().Name));
             }

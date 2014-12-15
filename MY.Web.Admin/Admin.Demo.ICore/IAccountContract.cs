@@ -1,5 +1,6 @@
 ﻿using Admin.Compoent.Tool;
 using Admin.Demo.Core.Models.Account;
+using Admin.Demo.Core.Models.Account.BusMode;
 
 namespace Admin.Demo.ICore
 {

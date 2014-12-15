@@ -6,5 +6,9 @@ namespace Admin.Demo.Core.Data.Repositories.Account.Impl
 {
     public class MemberRepositories:EfRepositoryBase<Member,Int32>,IMemberRepository
     {
+        public MemberRepositories(IUnitOfWork unitOfWork)
+        {
+            base.UnitOfWork = unitOfWork;
+        }
     }
 }
