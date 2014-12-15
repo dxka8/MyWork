@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account\Asd.cs" />
     <Compile Include="Account\BusMode\LoginInfo.cs" />
     <Compile Include="Account\LoginLog.cs" />
     <Compile Include="Account\Member.cs" />

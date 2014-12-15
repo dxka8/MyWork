@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Admin.Compoent.Tool;
 using Admin.Demo.Core.Models.Security;
 
@@ -38,9 +39,8 @@ namespace Admin.Demo.Core.Models.Account
 
         /// <summary>
         /// 获取或设置 用户扩展信息
-        /// </summary>
-        
-        public virtual MemberExtend Extend { get; set; }
+        /// </summary>     
+        public virtual  MemberExtend Extend { get; set; }
 
 
         /// <summary>
@@ -52,6 +52,8 @@ namespace Admin.Demo.Core.Models.Account
         /// 获取或设置 用户拥有的角色信息集合
         /// </summary>
         public virtual ICollection<Role> Roles { get; set; }
+
+    
 
     }
 }
