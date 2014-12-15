@@ -39,7 +39,7 @@ namespace Admin.Demo.Core.Data.Context
  
             public DbSet<LoginLog> LoginLogs { get; set; }
 
-            public DbSet<Asd> Asd { get; set; }
+            //public DbSet<Asd> Asd { get; set; }
 
             #endregion
 

@@ -57,18 +57,6 @@
     <Compile Include="Context\DemoUnitOfWorkContext.cs" />
     <Compile Include="Initialize\DatabaseInitializer.cs" />
     <Compile Include="Initialize\SampleData.cs" />
-    <Compile Include="Migrations\201412150857239_InitialCreate.cs" />
-    <Compile Include="Migrations\201412150857239_InitialCreate.Designer.cs">
-      <DependentUpon>201412150857239_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201412150901177_AddBieCuoLe.cs" />
-    <Compile Include="Migrations\201412150901177_AddBieCuoLe.Designer.cs">
-      <DependentUpon>201412150901177_AddBieCuoLe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201412150903174_ShaBi.cs" />
-    <Compile Include="Migrations\201412150903174_ShaBi.Designer.cs">
-      <DependentUpon>201412150903174_ShaBi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Account\IMemberRepository.cs" />
@@ -97,17 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Impl\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201412150857239_InitialCreate.resx">
-      <DependentUpon>201412150857239_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201412150901177_AddBieCuoLe.resx">
-      <DependentUpon>201412150901177_AddBieCuoLe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201412150903174_ShaBi.resx">
-      <DependentUpon>201412150903174_ShaBi.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
