@@ -23,7 +23,7 @@ namespace Admin.Demo.Core.Models.Security
         /// 获取或设置 角色类型的数值表示，用于数据库存储
         /// </summary>
         public int RoleTypeNum { get; set; }
-
+            
         /// <summary>
         /// 获取或设置 角色类型
         /// </summary>

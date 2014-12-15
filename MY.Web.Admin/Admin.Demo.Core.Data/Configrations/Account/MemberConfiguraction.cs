@@ -2,18 +2,14 @@
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
-using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using Admin.Demo.Core.Models.Account;
 
 namespace Admin.Demo.Core.Data.Configrations.Account
 {
-    public class LoginLogConfigration:EntityTypeConfiguration<LoginLog>
+    public class MemberConfiguraction:EntityTypeConfiguration<Member>
     {
-        public LoginLogConfigration()
-        {
-            HasRequired(m => m.Member).WithMany(s => s.LoginLogs);
-        }
+        //　HasMany(m => m.LoginLogs).WithRequired(n => n.Member);主体配置方式
     }
 }
