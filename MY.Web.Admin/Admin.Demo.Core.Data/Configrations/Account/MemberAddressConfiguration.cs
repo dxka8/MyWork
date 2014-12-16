@@ -9,7 +9,7 @@ using Admin.Demo.Core.Models.Account;
 
 namespace Admin.Demo.Core.Data.Configrations.Account
 {
-    public class MemberAddressConfiguration : ComplexTypeConfiguration<MemberAddress>
+    public class MemberAddressConfiguration : ComplexTypeConfiguration<MemberAddress>, IEntityMapper
     {
         public MemberAddressConfiguration()
         {
@@ -17,6 +17,11 @@ namespace Admin.Demo.Core.Data.Configrations.Account
             Property(m => m.City).HasColumnName("City");
             Property(m => m.County).HasColumnName("County");
             Property(m => m.Street).HasColumnName("Street");
+        }
+
+        public void RegistTo(System.Data.Entity.ModelConfiguration.Configuration.ConfigurationRegistrar configurations)
+        {
+            configurations.Add(this);
         }
     }
 }

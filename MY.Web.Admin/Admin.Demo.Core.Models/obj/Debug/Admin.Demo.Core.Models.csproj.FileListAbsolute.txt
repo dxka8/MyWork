@@ -55,3 +55,9 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Models
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.dll.config
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.pdb
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.dll.config
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Models.pdb
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Models\obj\Debug\Admin.Demo.Core.Models.csprojResolveAssemblyReference.cache
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Models\obj\Debug\Admin.Demo.Core.Models.dll
+C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Models\obj\Debug\Admin.Demo.Core.Models.pdb

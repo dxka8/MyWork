@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using System.ComponentModel.Composition.Hosting;
 using System.Data.Entity;
 using System.Linq;
@@ -48,13 +49,16 @@ namespace Admin
             builder.RegisterType<AccountService>().As<IAccountContract>();
 
             builder.RegisterType<MemberRepositories>().PropertiesAutowired();
-            builder.RegisterType<EfDemoUnitOfWorkContext>().As<IUnitOfWork>();
+            builder.RegisterType<EfUnitOfWorkContext>().As<IUnitOfWork>();
 
-            builder.RegisterType<EfDemoUnitOfWorkContext>().PropertiesAutowired();
-            builder.RegisterType<DemoDbContext>().As<DbContext>();
+            builder.RegisterType<EfUnitOfWorkContext>().PropertiesAutowired();
+            builder.RegisterType<EfDbContext>().As<DbContext>();
 
             builder.RegisterType<AccountService>().PropertiesAutowired();
             builder.RegisterType<MemberRepositories>().As<IMemberRepository>();
+
+            //builder.RegisterType<EfDbContext>().PropertiesAutowired();
+            //builder.RegisterGeneric(typeof(List<>)).As(typeof(IEnumerable<IEntityMapper>)).InstancePerLifetimeScope(); 
             container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
 

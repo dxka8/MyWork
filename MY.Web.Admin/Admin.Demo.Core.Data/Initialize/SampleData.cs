@@ -9,9 +9,9 @@ using Admin.Demo.Core.Models.Account;
 
 namespace Admin.Demo.Core.Data.Initialize
 {
-    public class SampleData : CreateDatabaseIfNotExists<DemoDbContext>
+    public class SampleData : CreateDatabaseIfNotExists<EfDbContext>
     {
-        protected override void Seed(DemoDbContext context)
+        protected override void Seed(EfDbContext context)
         {
             var members = new List<Member>()
             {

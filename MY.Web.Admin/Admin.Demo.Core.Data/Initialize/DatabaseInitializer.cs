@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Admin.Demo.Core.Data.Context;
 using Admin.Demo.Core.Data.Migrations;
 
+
 namespace Admin.Demo.Core.Data.Initialize
 {
     /// <summary>
@@ -20,7 +21,7 @@ namespace Admin.Demo.Core.Data.Initialize
         public static void Initialize()
         {
 
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<DemoDbContext, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<EfDbContext, Configuration>());
 
         }
     }
