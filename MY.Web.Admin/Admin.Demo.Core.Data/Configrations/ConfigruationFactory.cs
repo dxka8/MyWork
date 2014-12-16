@@ -14,13 +14,13 @@ namespace Admin.Demo.Core.Data.Configrations
         public List<IEntityMapper> CreatInstance()
         {
             var entityMappers = new List<IEntityMapper>();
-            Type classType = typeof (IEntityMapper);
-            classType.
-            //entityMappers.Add(new LoginLogConfiguration());
-            //entityMappers.Add(new MemberAddressConfiguration());
-            //entityMappers.Add(new MemberConfiguraction());
-            //entityMappers.Add(new MemberExtendConfigraction());
-            //entityMappers.Add(new RoleConfiguration());
+            //Type classType = typeof (IEntityMapper);
+            
+            entityMappers.Add(new LoginLogConfiguration());
+            entityMappers.Add(new MemberAddressConfiguration());
+            entityMappers.Add(new MemberConfiguraction());
+            entityMappers.Add(new MemberExtendConfigraction());
+            entityMappers.Add(new RoleConfiguration());
             return entityMappers;
         }
     }
