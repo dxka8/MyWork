@@ -21,7 +21,7 @@ namespace Admin.Demo.Core.Data.Initialize
         public static void Initialize()
         {
 
-           Database.SetInitializer(new MigrateDatabaseToLatestVersion<DemoDbContext, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<EfDbContext, Configuration>());
 
         }
     }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.ComponentModel.Composition;
-using System.Data.Entity;
-using System.Reflection;
-using Admin.Compoent.Tool.Unity;
-using Admin.Component.Data;
+﻿using System.Data.Entity;
 using Admin.Component.Data.EntityFramework;
 
 namespace Admin.Demo.Core.Data.Context
@@ -11,14 +6,14 @@ namespace Admin.Demo.Core.Data.Context
     /// <summary>
     ///     Demo项目单元操作类
     /// </summary>   
-    public class EfDemoUnitOfWorkContext : EfUnitOfWorkContextBase
+    public class EfUnitOfWorkContext : EfUnitOfWorkContextBase
     {
-        public EfDemoUnitOfWorkContext(DbContext dbContext)
+        public EfUnitOfWorkContext(DbContext dbContext)
         {
 
             DbContext = dbContext;
         }
-        public EfDemoUnitOfWorkContext()
+        public EfUnitOfWorkContext()
         {
 
             
@@ -27,7 +22,7 @@ namespace Admin.Demo.Core.Data.Context
         /// <summary>
         ///     获取或设置 默认的Demo项目数据访问上下文对象
         /// </summary>      
-        public DbContext DbContext { get; set; }
+        public new DbContext DbContext { get; set; }
 
 
 

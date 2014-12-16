@@ -52,9 +52,10 @@
     <Compile Include="Configrations\Account\MemberAddressConfiguration.cs" />
     <Compile Include="Configrations\Account\MemberConfiguraction.cs" />
     <Compile Include="Configrations\Account\MemberExtendConfigraction.cs" />
+    <Compile Include="Configrations\ConfigruationFactory.cs" />
     <Compile Include="Configrations\security\RoleConfiguration.cs" />
-    <Compile Include="Context\DemoDbContext.cs" />
-    <Compile Include="Context\DemoUnitOfWorkContext.cs" />
+    <Compile Include="Context\EFDbContext.cs" />
+    <Compile Include="Context\EfUnitOfWorkContext.cs" />
     <Compile Include="Initialize\DatabaseInitializer.cs" />
     <Compile Include="Initialize\SampleData.cs" />
     <Compile Include="Migrations\Configuration.cs" />

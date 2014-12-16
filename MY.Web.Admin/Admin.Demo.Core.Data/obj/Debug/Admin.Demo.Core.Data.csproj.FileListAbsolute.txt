@@ -80,10 +80,6 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.C
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.pdb
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.Migrations.InitialCreate.resources
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.csproj.GenerateResource.Cache
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.Migrations.AddBieCuoLe.resources
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.Migrations.ShaBi.resources
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.csprojResolveAssemblyReference.cache
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.dll
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin.Demo.Core.Data\obj\Debug\Admin.Demo.Core.Data.pdb

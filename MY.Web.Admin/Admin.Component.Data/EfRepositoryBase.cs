@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Admin.Compoent.Tool;
 using Admin.Compoent.Tool.Unity;
 using Admin.Component.Data.EntityFramework;
-using Admin.Demo.Core.Data.Context;
 
 
 namespace Admin.Component.Data
@@ -106,8 +105,8 @@ namespace Admin.Component.Data
         public int Update(System.Linq.Expressions.Expression<Func<TEntity, object>> propertyExpression, TEntity entity, bool isSave = true)
         {
             throw new NotSupportedException("上下文公用，不支持按需更新功能。");
-            PublicHelper.CheckArgument(propertyExpression, "propertyExpression");
-            PublicHelper.CheckArgument(entity, "entity");
+            //PublicHelper.CheckArgument(propertyExpression, "propertyExpression");
+            //PublicHelper.CheckArgument(entity, "entity");
             //EFContext.RegisterModified<TEntity, TKey>(propertyExpression, entity);
             //if (isSave)
             //{
@@ -116,7 +115,7 @@ namespace Admin.Component.Data
             //    var entry = EFContext.DbContext.Entry(entity);
             //    return EFContext.Commit(false);
             //}
-            return 0;
+            //return 0;
         }
 
         public TEntity GetByKey(TKey key)
