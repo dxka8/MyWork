@@ -70,6 +70,7 @@
     <Compile Include="PublicHelper.cs" />
     <Compile Include="PwdHelper.cs" />
     <Compile Include="Roll\Roll.cs" />
+    <Compile Include="T4\T4ModelInfo.cs" />
     <Compile Include="Unity\UnityHelper.cs" />
   </ItemGroup>
   <ItemGroup>

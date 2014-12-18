@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Admin.Compoent.Tool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Admin\bin\Admin.Compoent.Tool.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
@@ -37,6 +41,7 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -54,6 +59,7 @@
     <Compile Include="Configrations\Account\MemberExtendConfigraction.cs" />
     <Compile Include="Configrations\ConfigruationFactory.cs" />
     <Compile Include="Configrations\security\RoleConfiguration.cs" />
+    <Compile Include="Configurations\MemberConfiguration.generated.cs" />
     <Compile Include="Context\EFDbContext.cs" />
     <Compile Include="Context\EfUnitOfWorkContext.cs" />
     <Compile Include="Initialize\DatabaseInitializer.cs" />
@@ -62,12 +68,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Account\IMemberRepository.cs" />
     <Compile Include="Repositories\Account\Impl\MemberRepositories.cs" />
+    <Compile Include="T4\EntityCodeScript.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityCodeScript.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Admin.Compoent.Tool\Admin.Compoent.Tool.csproj">
-      <Project>{b2c146c5-1a81-4c9f-a9e8-cd220dd0d45d}</Project>
-      <Name>Admin.Compoent.Tool</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Admin.Component.Data\Admin.Component.Data.csproj">
       <Project>{6308fb5e-1639-43b9-8130-7a46f71b2458}</Project>
       <Name>Admin.Component.Data</Name>
@@ -86,6 +93,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Impl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="T4\EntityCodeScript.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityCodeScript.cs</LastGenOutput>
+      <LastOutputs>
+..\Configurations\MemberConfiguration.generated.cs
+.\EntityCodeScript.cs
+</LastOutputs>
+    </Content>
+    <Content Include="T4\EntityConfigurationTemplate.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

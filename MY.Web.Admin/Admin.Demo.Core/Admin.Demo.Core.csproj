@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Admin.Compoent.Tool, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Admin\bin\Admin.Compoent.Tool.dll</HintPath>
+    </Reference>
     <Reference Include="Admin.Component.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Admin\bin\Admin.Component.Data.dll</HintPath>
@@ -55,10 +59,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Admin.Compoent.Tool\Admin.Compoent.Tool.csproj">
-      <Project>{b2c146c5-1a81-4c9f-a9e8-cd220dd0d45d}</Project>
-      <Name>Admin.Compoent.Tool</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Admin.Demo.Core.Models\Admin.Demo.Core.Models.csproj">
       <Project>{c839a87a-7a69-4018-96ce-d469bf2748ac}</Project>
       <Name>Admin.Demo.Core.Models</Name>

@@ -505,9 +505,7 @@ C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\zh-Hans\Micr
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.dll
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.pdb
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Compoent.Tool.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.ISite.pdb
-C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.Models.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Core.Data.pdb
 C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Component.Data.pdb
@@ -612,3 +610,5 @@ C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\zh-Hans\Microsoft.O
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.dll
 C:\Users\凡雨\Desktop\github\MyWork\MY.Web.Admin\Admin\obj\Debug\Admin.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Demo.Site.Models.pdb
+C:\Users\Administrator\Desktop\github\MyWork\MY.Web.Admin\Admin\bin\Admin.Compoent.Tool.pdb
