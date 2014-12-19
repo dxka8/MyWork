@@ -53,16 +53,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configrations\Account\LoginLogConfiguration.cs" />
-    <Compile Include="Configrations\Account\MemberAddressConfiguration.cs" />
-    <Compile Include="Configrations\Account\MemberConfiguraction.cs" />
-    <Compile Include="Configrations\Account\MemberExtendConfigraction.cs" />
-    <Compile Include="Configrations\ConfigruationFactory.cs" />
-    <Compile Include="Configrations\security\RoleConfiguration.cs" />
-    <Compile Include="Configurations\LoginLogConfiguration.generated.cs" />
-    <Compile Include="Configurations\MemberConfiguration.generated.cs" />
-    <Compile Include="Configurations\MemberExtendConfiguration.generated.cs" />
-    <Compile Include="Configurations\RoleConfiguration.generated.cs" />
+    <Compile Include="Configurations\Account\LoginLogConfiguration.cs" />
+    <Compile Include="Configurations\Account\LoginLogConfiguration.generated.cs" />
+    <Compile Include="Configurations\Account\MemberAddressConfiguration.cs" />
+    <Compile Include="Configurations\Account\MemberConfiguration.cs" />
+    <Compile Include="Configurations\Account\MemberConfiguration.generated.cs" />
+    <Compile Include="Configurations\Account\MemberExtendConfiguration.cs" />
+    <Compile Include="Configurations\Account\MemberExtendConfiguration.generated.cs" />
+    <Compile Include="Configurations\ConfigruationFactory.cs" />
+    <Compile Include="Configurations\Security\RoleConfiguration.cs" />
+    <Compile Include="Configurations\Security\RoleConfiguration.generated.cs" />
     <Compile Include="Context\EFDbContext.cs" />
     <Compile Include="Context\EfUnitOfWorkContext.cs" />
     <Compile Include="Initialize\DatabaseInitializer.cs" />
@@ -102,10 +102,10 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EntityCodeScript.cs</LastGenOutput>
       <LastOutputs>
-..\Configurations\LoginLogConfiguration.generated.cs
-..\Configurations\MemberConfiguration.generated.cs
-..\Configurations\MemberExtendConfiguration.generated.cs
-..\Configurations\RoleConfiguration.generated.cs
+..\Configurations\Account\LoginLogConfiguration.generated.cs
+..\Configurations\Account\MemberConfiguration.generated.cs
+..\Configurations\Account\MemberExtendConfiguration.generated.cs
+..\Configurations\Security\RoleConfiguration.generated.cs
 .\EntityCodeScript.cs
 </LastOutputs>
     </Content>

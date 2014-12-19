@@ -12,7 +12,7 @@ namespace Admin.Demo.Core.Data.Configurations.Security
     /// <summary>
     /// 实体类-数据表映射——角色信息
     /// </summary>    
-	internal partial class RoleConfiguration : EntityTypeConfiguration<Role>, IEntityMapper
+    internal partial class RoleConfiguration : EntityTypeConfiguration<Role>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——角色信息

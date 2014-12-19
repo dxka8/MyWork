@@ -33,7 +33,6 @@ namespace Admin.Demo.Core.Data.Configurations.Account
         /// <param name="configurations">实体映射配置注册器</param>
         public void RegistTo(ConfigurationRegistrar configurations)
         {
-            
             configurations.Add(this);
         }
     }

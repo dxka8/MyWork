@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Admin.Compoent.Tool.T4;
+﻿using System.Collections.Generic;
 using Admin.Component.Data;
-using Admin.Demo.Core.Data.Configrations.Account;
-using Admin.Demo.Core.Data.Configrations.security;
+using Admin.Demo.Core.Data.Configurations.Account;
+using Admin.Demo.Core.Data.Configurations.Security;
 
-namespace Admin.Demo.Core.Data.Configrations
+namespace Admin.Demo.Core.Data.Configurations
 {
     public class ConfigruationFactory
     {
@@ -19,8 +14,8 @@ namespace Admin.Demo.Core.Data.Configrations
             
             entityMappers.Add(new LoginLogConfiguration());
             entityMappers.Add(new MemberAddressConfiguration());
-            entityMappers.Add(new MemberConfiguraction());
-            entityMappers.Add(new MemberExtendConfigraction());
+            entityMappers.Add(new MemberConfiguration());
+            entityMappers.Add(new MemberExtendConfiguration());
             entityMappers.Add(new RoleConfiguration());
            
             return entityMappers;

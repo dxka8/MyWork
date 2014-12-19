@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity.ModelConfiguration;
 using Admin.Component.Data;
 using Admin.Demo.Core.Models.Account;
 
-namespace Admin.Demo.Core.Data.Configrations.Account
+namespace Admin.Demo.Core.Data.Configurations.Account
 {
     public class MemberAddressConfiguration : ComplexTypeConfiguration<MemberAddress>, IEntityMapper
     {

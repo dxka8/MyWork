@@ -2,7 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Admin.Component.Data;
-using Admin.Demo.Core.Data.Configrations;
+using Admin.Demo.Core.Data.Configurations;
 using Admin.Demo.Core.Models.Account;
 
 namespace Admin.Demo.Core.Data.Context

@@ -32,7 +32,9 @@
         T4ModelInfo model = new T4ModelInfo(modelType);
         //实体映射类
         EntityConfigurationTemplate config = new EntityConfigurationTemplate(model);
-        string path = string.Format(@"{0}\Configurations", projectPath);
+         var path = model.UseModuleDir?string.Format(@"{0}\Configurations\{1}", projectPath, model.ModuleName)
+            : string.Format(@"{0}\Configurations", projectPath);
+        
         config.Output.Encoding = Encoding.UTF8;
         config.RenderToFile(Path.Combine(path, config.FileName));
     }

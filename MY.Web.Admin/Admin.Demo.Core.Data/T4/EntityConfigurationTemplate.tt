@@ -1,7 +1,5 @@
 ﻿<#+
-// <copyright file="EntityConfigurationTemplate.tt" company="郭明锋@中国">
-//  Copyright © 郭明锋@中国. All Rights Reserved.
-// </copyright>
+
 
 public class EntityConfigurationTemplate : CSharpTemplate
 {
