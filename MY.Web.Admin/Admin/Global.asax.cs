@@ -1,24 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.ComponentModel.Composition.Hosting;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Data.Entity;
 using System.Reflection;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Admin.Compoent.Tool.Unity;
 using Admin.Component.Data;
 using Admin.Demo.Core.Data.Context;
 using Admin.Demo.Core.Data.Initialize;
 using Admin.Demo.Core.Data.Repositories.Account;
 using Admin.Demo.Core.Impl;
-using Admin.Demo.Core.Models.Account;
 using Admin.Demo.ICore;
 using Admin.Demo.ISite;
-using Admin.Demo.Core;
 using Admin.Demo.Site.Impl;
 using Autofac;
 using Autofac.Integration.Mvc;
@@ -26,7 +17,7 @@ using Autofac.Integration.Mvc;
 
 namespace Admin
 {
-    public class MvcApplication : System.Web.HttpApplication
+    public partial class MvcApplication : System.Web.HttpApplication
     {
         public static IContainer Container;
         protected void Application_Start()

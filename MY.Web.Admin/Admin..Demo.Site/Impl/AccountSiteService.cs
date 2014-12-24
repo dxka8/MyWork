@@ -58,14 +58,13 @@ namespace Admin.Demo.Site.Impl
         }
         #endregion
 
-        readonly static UnityHelper UnityHelper=new UnityHelper();
 
-        //ioc
-        public static IAccountContract AccountService { get; set; }
+        private static IAccountContract AccountService { get; set; }
         public AccountSiteService(IAccountContract accountContract)
         {
             AccountService = accountContract;
-        }
+        } 
+
 
         /// <summary>
         /// 用户登陆方法
@@ -74,7 +73,7 @@ namespace Admin.Demo.Site.Impl
         /// <returns></returns>
         public OperationResult Login(LoginModel model)
         {
-
+                  
             //todo:model NUll
                 var loginInfo = new LoginInfo()
                 {
@@ -82,7 +81,7 @@ namespace Admin.Demo.Site.Impl
                     IpAddress = "127.0.0.1",
                     Password = model.Password,
                 };
-
+                
                 var result = AccountService.Login(loginInfo);
                 if (result.ResultType == OperationResultType.Success)
                 {                 
@@ -107,6 +106,24 @@ namespace Admin.Demo.Site.Impl
         }
 
 
-        
+        public IQueryable<Member> Members
+        {
+            get { return AccountService.Members; }
+        }
+
+        public IQueryable<MemberExtend> MemberExtends
+        {
+            get { return AccountService.MemberExtends; }
+        }
+
+        public IQueryable<LoginLog> LoginLogs
+        {
+            get { return AccountService.LoginLogs; }
+        }
+
+        public IQueryable<Core.Models.Security.Role> Roles
+        {
+            get { return AccountService.Roles; }
+        }
     }
 }
