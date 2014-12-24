@@ -12,7 +12,7 @@ namespace Admin.Demo.Core.Data.Configurations.Account
     /// <summary>
     /// 实体类-数据表映射——用户扩展信息
     /// </summary>    
-    internal partial class MemberExtendConfiguration : EntityTypeConfiguration<MemberExtend>, IEntityMapper
+	internal partial class MemberExtendConfiguration : EntityTypeConfiguration<MemberExtend>, IEntityMapper
     {
         /// <summary>
         /// 实体类-数据表映射构造函数——用户扩展信息

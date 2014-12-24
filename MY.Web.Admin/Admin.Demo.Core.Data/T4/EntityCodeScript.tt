@@ -11,7 +11,9 @@
 <#@ Import Namespace="Admin.Compoent.Tool.T4" #>
 <#@ Import Namespace="Admin.Compoent.Tool.Extensions" #>
 <#@ include file="T4Toolbox.tt" #>
-<#@ include file="EntityConfigurationTemplate.tt" #>
+<#@ include file="EntityConfigurationTemplate.ttinclude" #>
+<#@ include file="EntityRepositoryTemplate.ttinclude" #>
+<#@ include file="IEntityRepositoryTemplate.ttinclude" #>
 
 
 <#
@@ -32,10 +34,28 @@
         T4ModelInfo model = new T4ModelInfo(modelType);
         //实体映射类
         EntityConfigurationTemplate config = new EntityConfigurationTemplate(model);
-         var path = model.UseModuleDir?string.Format(@"{0}\Configurations\{1}", projectPath, model.ModuleName)
-            : string.Format(@"{0}\Configurations", projectPath);
-        
+         var path = model.UseModuleDir
+            ?string.Format(@"{0}\Configurations\{1}", projectPath, model.ModuleName)
+            : string.Format(@"{0}\Configurations", projectPath);       
         config.Output.Encoding = Encoding.UTF8;
         config.RenderToFile(Path.Combine(path, config.FileName));
+
+        
+         IEntityRepositoryTemplate irep = new IEntityRepositoryTemplate(model);
+         path = model.UseModuleDir
+            ?string.Format(@"{0}\Repositories\{1}", projectPath, model.ModuleName)
+            : string.Format(@"{0}\Repositories", projectPath);
+        
+        irep.Output.Encoding = Encoding.UTF8;
+        irep.RenderToFile(Path.Combine(path, irep.FileName));
+    
+        //实体映射类
+        EntityRepositoryTemplate rep = new EntityRepositoryTemplate(model);
+        path = model.UseModuleDir?string.Format(@"{0}\Repositories\{1}\Impl", projectPath, model.ModuleName)
+            : string.Format(@"{0}\Repositories", projectPath);
+        
+        rep.Output.Encoding = Encoding.UTF8;
+        rep.RenderToFile(Path.Combine(path, rep.FileName));
+
     }
 #>

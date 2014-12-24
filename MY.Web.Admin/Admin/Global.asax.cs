@@ -14,7 +14,6 @@ using Admin.Component.Data;
 using Admin.Demo.Core.Data.Context;
 using Admin.Demo.Core.Data.Initialize;
 using Admin.Demo.Core.Data.Repositories.Account;
-using Admin.Demo.Core.Data.Repositories.Account.Impl;
 using Admin.Demo.Core.Impl;
 using Admin.Demo.Core.Models.Account;
 using Admin.Demo.ICore;
@@ -29,7 +28,7 @@ namespace Admin
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        public static IContainer container;
+        public static IContainer Container;
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -48,19 +47,19 @@ namespace Admin
             builder.RegisterType<AccountSiteService>().PropertiesAutowired();
             builder.RegisterType<AccountService>().As<IAccountContract>();
 
-            builder.RegisterType<MemberRepositories>().PropertiesAutowired();
+            builder.RegisterType<MemberRepository>().PropertiesAutowired();
             builder.RegisterType<EfUnitOfWorkContext>().As<IUnitOfWork>();
 
             builder.RegisterType<EfUnitOfWorkContext>().PropertiesAutowired();
             builder.RegisterType<EfDbContext>().As<DbContext>();
 
             builder.RegisterType<AccountService>().PropertiesAutowired();
-            builder.RegisterType<MemberRepositories>().As<IMemberRepository>();
+            builder.RegisterType<MemberRepository>().As<IMemberRepository>();
 
             //builder.RegisterType<EfDbContext>().PropertiesAutowired();
             //builder.RegisterGeneric(typeof(List<>)).As(typeof(IEnumerable<IEntityMapper>)).InstancePerLifetimeScope(); 
-            container = builder.Build();
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            Container = builder.Build();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(Container));
 
         }
     }

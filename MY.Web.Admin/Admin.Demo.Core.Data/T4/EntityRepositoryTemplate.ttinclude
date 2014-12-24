@@ -1,0 +1,59 @@
+﻿<#+
+
+
+    public class EntityRepositoryTemplate : CSharpTemplate
+    {
+        private T4ModelInfo _model;
+        
+        public EntityRepositoryTemplate(T4ModelInfo model)
+        {
+            _model = model;
+        }
+
+        /// <summary>
+        /// 获取 生成的文件名，根据模型名定义
+        /// </summary>
+        public string FileName
+        {
+            get
+            { 
+                return string.Format("{0}Repository.generated.cs", _model.Name);
+            }
+        }
+
+        public override string TransformText()
+        {
+#>
+
+using System;
+using System.Data.Entity.ModelConfiguration;
+using System.Data.Entity.ModelConfiguration.Configuration;
+
+using Admin.Component.Data;
+using Admin.Demo.Core.Models<#=_model.UseModuleDir ? "." + _model.ModuleName : null #>;
+
+
+namespace Admin.Demo.Core.Data.Repositories<#=_model.UseModuleDir ? "." + _model.ModuleName : null #>
+{
+    /// <summary>
+    /// 实体类-数据表映射——<#=_model.Description #>
+    /// </summary>    
+	public partial class <#=_model.Name #>Repository : EfRepositoryBase<<#=_model.Name #>,<#=_model.KeyTypeName #>>, I<#=_model.Name#>Repository
+    {
+        /// <summary>
+        /// 实体类-数据表映射构造函数——<#=_model.Description #>
+        /// </summary>
+        public <#=_model.Name #>Repository(IUnitOfWork unitOfWork)
+        {
+			 base.UnitOfWork = unitOfWork;
+        }
+    }
+}
+<#+
+            return this.GenerationEnvironment.ToString();
+        }
+    }
+
+#>
+
+

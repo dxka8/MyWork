@@ -69,8 +69,14 @@
     <Compile Include="Initialize\SampleData.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\Account\IMemberRepository.cs" />
-    <Compile Include="Repositories\Account\Impl\MemberRepositories.cs" />
+    <Compile Include="Repositories\Account\ILoginLogRepository.generated.cs" />
+    <Compile Include="Repositories\Account\IMemberExtendRepository.generated.cs" />
+    <Compile Include="Repositories\Account\IMemberRepository.generated.cs" />
+    <Compile Include="Repositories\Account\Impl\LoginLogRepository.generated.cs" />
+    <Compile Include="Repositories\Account\Impl\MemberExtendRepository.generated.cs" />
+    <Compile Include="Repositories\Account\Impl\MemberRepository.generated.cs" />
+    <Compile Include="Repositories\Security\Impl\RoleRepository.generated.cs" />
+    <Compile Include="Repositories\Security\IRoleRepository.generated.cs" />
     <Compile Include="T4\EntityCodeScript.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,10 +112,20 @@
 ..\Configurations\Account\MemberConfiguration.generated.cs
 ..\Configurations\Account\MemberExtendConfiguration.generated.cs
 ..\Configurations\Security\RoleConfiguration.generated.cs
+..\Repositories\Account\ILoginLogRepository.generated.cs
+..\Repositories\Account\IMemberExtendRepository.generated.cs
+..\Repositories\Account\IMemberRepository.generated.cs
+..\Repositories\Account\Impl\LoginLogRepository.generated.cs
+..\Repositories\Account\Impl\MemberExtendRepository.generated.cs
+..\Repositories\Account\Impl\MemberRepository.generated.cs
+..\Repositories\Security\Impl\RoleRepository.generated.cs
+..\Repositories\Security\IRoleRepository.generated.cs
 .\EntityCodeScript.cs
 </LastOutputs>
     </Content>
-    <Content Include="T4\EntityConfigurationTemplate.tt" />
+    <None Include="T4\IEntityRepositoryTemplate.ttinclude" />
+    <None Include="T4\EntityRepositoryTemplate.ttinclude" />
+    <None Include="T4\EntityConfigurationTemplate.ttinclude" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

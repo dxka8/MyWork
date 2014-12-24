@@ -11,15 +11,12 @@ namespace Admin.Demo.Core.Models.Account
     /// 实体类——登录记录信息
     /// </summary>
     [Description("登录记录信息")]
-    public class LoginLog : EntityBase<Guid>
+    public class LoginLog : EntityBase<Int32>
     {
         /// <summary>
         /// 初始化一个 登录记录实体类 的新实例
         /// </summary>
-        public LoginLog()
-        {
-            Id = CombHelper.NewComb();
-        }
+      
 
         [Required]
         [StringLength(15)]
