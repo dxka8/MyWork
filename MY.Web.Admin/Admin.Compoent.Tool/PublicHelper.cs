@@ -99,6 +99,7 @@ namespace Admin.Component.Data
             {
                 msg = "未知业务逻辑层异常，详情请查看日志信息。";
             }
+            
             return e == null ? new BusinessException(string.Format("业务逻辑层异常：{0}", msg)) : new BusinessException(string.Format("业务逻辑层异常：{0}", msg), e);
         }
 

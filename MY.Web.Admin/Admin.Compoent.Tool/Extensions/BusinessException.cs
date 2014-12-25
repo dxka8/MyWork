@@ -9,7 +9,7 @@ namespace Admin.Compoent.Tool.Extensions
     [Serializable]
     public class BusinessException : Exception
     {
-        /// <summary>
+         /// <summary>
         ///     实体化一个 GMF.Component.Tools.BllException 类的新实例
         /// </summary>
         public BusinessException() { }
@@ -37,4 +37,5 @@ namespace Admin.Compoent.Tool.Extensions
         protected BusinessException(SerializationInfo info, StreamingContext context)
             : base(info, context) { }
     }
+    
 }
