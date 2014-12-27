@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Reflection;
+using Admin.Compoent.Tool.Extensions;
 
 namespace Admin.Compoent.Tool.Extend
 {
@@ -12,32 +13,30 @@ namespace Admin.Compoent.Tool.Extend
         /// </summary>
         /// <param name="en"></param>
         /// <returns></returns>
-        public static string Getdescription(this Enum en)
+        public static string ToDescription1(this Enum enumeration)
         {
-            Type type = en.GetType();
-            MemberInfo[] memInfo = type.GetMember(en.ToString());
-            if (memInfo.Length > 0)
+            Type type = enumeration.GetType();
+            MemberInfo[] members = type.GetMember(enumeration.CastTo<string>());
+            if (members.Length > 0)
             {
-                object[] attrs = memInfo[0].GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
-                if (attrs.Length > 0)
-                    return ((DescriptionAttribute)attrs[0]).Description;
+                return members[0].ToDescription();
             }
-            return en.ToString();
+            return enumeration.CastTo<string>();
         }
 
-        public static string ToDescription(this Enum obj)
+        public static string ToDescription2(this Enum enumeration)
         {
             bool isTop = false;
-            if (obj == null)
+            if (enumeration == null)
             {
                 return string.Empty;
             }
             try
             {
-                Type enumType = obj.GetType();
+                Type enumType = enumeration.GetType();
                 DescriptionAttribute dna;
                 {
-                    FieldInfo fi = enumType.GetField(Enum.GetName(enumType, obj));
+                    FieldInfo fi = enumType.GetField(Enum.GetName(enumType, enumeration));
                     dna = (DescriptionAttribute)Attribute.GetCustomAttribute(
                         fi, typeof(DescriptionAttribute));
                 }
@@ -47,7 +46,7 @@ namespace Admin.Compoent.Tool.Extend
             catch
             {
             }
-            return obj.ToString();
+            return enumeration.ToString();
         }
 
        

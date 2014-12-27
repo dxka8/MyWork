@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using Admin.Component.Data;
 
 namespace Admin.Compoent.Tool.Extensions
 {
@@ -42,6 +40,133 @@ namespace Admin.Compoent.Tool.Extensions
         public static bool IsEmpty<T>(this IEnumerable<T> collection)
         {
             return !collection.Any();
+        }
+
+        /// <summary>
+        /// 根据第三方条件是否为真来决定是否执行指定条件的查询
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="predicate"></param>
+        /// <param name="condition"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> WhereIf<T>(this IEnumerable<T> source, Func<T, bool> predicate, bool condition)
+        {
+            return condition ? source.Where(predicate) : source;
+        }
+
+        /// <summary>
+        ///  根据指定条件返回集合中不重复的元素
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="TKey"></typeparam>
+        /// <param name="sourec"></param>
+        /// <param name="keyselector"></param>
+        /// <returns></returns>
+        public static IEnumerable<T> DistinctBy<T,TKey>(this IEnumerable<T> sourec,Func<T,TKey> keyselector)
+        {
+           return sourec.GroupBy(keyselector).Select(group => group.First());
+        }
+
+
+        #endregion
+
+        #region IQueryable的扩展
+        /// <summary>
+        ///     根据第三方条件是否为真来决定是否执行指定条件的查询
+        /// </summary>
+        /// <param name="source"> 要查询的源 </param>
+        /// <param name="predicate"> 查询条件 </param>
+        /// <param name="condition"> 第三方条件 </param>
+        /// <typeparam name="T"> 动态类型 </typeparam>
+        /// <returns> 查询的结果 </returns>
+        public static IQueryable<T> WhereIf<T>(this IQueryable<T> source, Expression<Func<T, bool>> predicate, bool condition)
+        {
+            PublicHelper.CheckArgument(predicate, "predicate");
+            return condition ? source.Where(predicate) : source;
+        }
+
+        /// <summary>
+        /// 排序
+        /// </summary>
+        /// <typeparam name="T">动态类型</typeparam>
+        /// <param name="source">要查询的源</param>
+        /// <param name="propertyName">排序字段名字</param>
+        /// <param name="sortDirection">排序方向</param>
+        /// <returns></returns>
+        public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, string propertyName,
+            ListSortDirection sortDirection = ListSortDirection.Ascending)
+        {
+            PublicHelper.CheckArgument(propertyName, "propertyName");
+            return QueryableHelper<T>.OrderBy(source, propertyName, sortDirection);
+        }
+
+        /// <summary>
+        ///     把IQueryable[T]集合按指定属性排序条件进行排序
+        /// </summary>
+        /// <typeparam name="T">动态类型</typeparam>
+        /// <param name="source">要排序的数据集</param>
+        /// <param name="sortCondition">列表属性排序条件</param>
+        /// <returns></returns>
+        public static IOrderedQueryable<T> OrderBy<T>(this IQueryable<T> source, PropertySortCondition sortCondition)
+        {
+            PublicHelper.CheckArgument(sortCondition, "sortCondition");
+            return source.OrderBy(sortCondition.PropertyName, sortCondition.ListSortDirection);
+        }
+        /// <summary>
+        ///     把IOrderedQueryable[T]集合继续按指定属性排序方式进行排序
+        /// </summary>
+        /// <typeparam name="T">动态类型</typeparam>
+        /// <param name="source">要排序的数据集</param>
+        /// <param name="propertyName">排序属性名</param>
+        /// <param name="sortDirection">排序方向</param>
+        /// <returns></returns>
+        public static IOrderedQueryable<T> ThenBy<T>(this IOrderedQueryable<T> source, string propertyName,
+            ListSortDirection sortDirection = ListSortDirection.Ascending)
+        {
+            PublicHelper.CheckArgument(propertyName, "propertyName");
+            return QueryableHelper<T>.ThenBy(source, propertyName, sortDirection);
+        }
+
+        /// <summary>
+        ///     把IOrderedQueryable[T]集合继续指定属性排序方式进行排序
+        /// </summary>
+        /// <typeparam name="T">动态类型</typeparam>
+        /// <param name="source">要排序的数据集</param>
+        /// <param name="sortCondition">列表属性排序条件</param>
+        /// <returns></returns>
+        public static IOrderedQueryable<T> ThenBy<T>(this IOrderedQueryable<T> source, PropertySortCondition sortCondition)
+        {
+            PublicHelper.CheckArgument(sortCondition, "sortCondition");
+            return source.ThenBy(sortCondition.PropertyName, sortCondition.ListSortDirection);
+        }
+
+        public static IQueryable<TEntity> Where<TEntity, TKey>(this IQueryable<TEntity> source,Expression<Func<TEntity,bool>> predicate,int pageIndex,int pageSize,out int total, PropertySortCondition[] sortConditions)where TEntity :EntityBase<TKey>
+        {
+            
+            PublicHelper.CheckArgument(predicate, "predicate");
+            PublicHelper.CheckArgument(sortConditions, "sortCondition");
+            PublicHelper.CheckArgument(pageIndex, "pageIndex");
+            PublicHelper.CheckArgument(pageSize, "pageSize");
+            total = source.Count(predicate);
+            if (sortConditions == null || sortConditions.Length == 0)
+            {
+                source=source.OrderBy(a => a.Id);
+            }
+            else
+            {
+                var count = 0;
+                IOrderedQueryable<TEntity> orderSource = null;
+                foreach (var sortCondition in sortConditions)
+                {
+                    orderSource = count == 0 ? source.OrderBy(sortCondition) : orderSource.ThenBy(sortCondition);
+                    count++;
+                }
+                source = orderSource;
+            }
+            return source != null?source.Where(predicate).Skip((pageIndex - 1) * pageSize).Take(pageSize)
+                : Enumerable.Empty<TEntity>().AsQueryable();
+                
         }
         #endregion
 

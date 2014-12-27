@@ -38,7 +38,7 @@ namespace Admin.Controllers
             //{
                 OperationResult result = AccountContract.Login(model);
                 
-                var msg = result.Message ?? result.ResultType.ToDescription();
+                var msg = result.Message ?? result.ResultType.ToDescription1();
                 if (result.ResultType == OperationResultType.Success)
                 {
                     return Redirect(model.ReturnUrl);

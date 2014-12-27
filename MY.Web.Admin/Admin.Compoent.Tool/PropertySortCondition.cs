@@ -28,7 +28,7 @@ namespace Admin.Compoent.Tool
         public PropertySortCondition(string propertyName,ListSortDirection listSort)
         {
             PropertyName = propertyName;
-            ListSort = listSort;
+            ListSortDirection = listSort;
         }
         /// <summary>
         /// 排序属性名称
@@ -38,6 +38,6 @@ namespace Admin.Compoent.Tool
         /// 排序方向
         /// </summary>
 
-        public ListSortDirection ListSort { get; set; }
+        public ListSortDirection ListSortDirection { get; set; }
     }
 }
